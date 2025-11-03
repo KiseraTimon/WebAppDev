@@ -11,12 +11,14 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun Footer(
+    // Properties
+
     isInGame: Boolean,
     onExitGame: (() -> Unit)? = null,
     onRestart: (() -> Unit)? = null
 ) {
     if (isInGame) {
-        // Footer for in-game
+        // In-game Footer
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -32,7 +34,7 @@ fun Footer(
             }
         }
     } else {
-        // Footer for homepage
+        // Footer for HomeScreen
         NavigationBar {
             NavigationBarItem(
                 icon = { Icon(Icons.Filled.Lock, contentDescription = "Challenges") },

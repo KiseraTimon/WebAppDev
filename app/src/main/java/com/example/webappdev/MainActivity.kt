@@ -14,10 +14,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             WebAppDevTheme {
-                // Dummy user for now
-                val user = remember { User("Kisera", "kisera@example.com") }
+                // Dummy User
+                val user = remember { User("Kisera", "kisera@gmail.com") }
 
-                // State to switch between home and game screens
+                // State for HomeScreen-GameScreen Transition
                 var isInGame by remember { mutableStateOf(false) }
 
                 if (isInGame) {

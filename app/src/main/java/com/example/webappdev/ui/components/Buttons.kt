@@ -6,7 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-// Reusable button style
+// Templates for The Buttons
 @Composable
 fun ChessButton(label: String, onClick: () -> Unit) {
     Button(

@@ -22,11 +22,12 @@ fun GameScreen(user: User, onExitGame: () -> Unit, onRestart: () -> Unit) {
             )
         }
     ) { padding ->
+        // Chess Placeholder Canvas
         Box(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .background(Color.Black) // Chessboard placeholder
+                .background(Color.Black)
         )
     }
 }

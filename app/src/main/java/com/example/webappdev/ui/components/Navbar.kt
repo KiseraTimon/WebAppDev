@@ -11,7 +11,11 @@ import com.example.webappdev.model.User
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Navbar(user: User, isInGame: Boolean) {
+fun Navbar(
+    // Properties
+    user: User,
+    isInGame: Boolean
+) {
     TopAppBar(
         title = {
             Column {
@@ -20,6 +24,7 @@ fun Navbar(user: User, isInGame: Boolean) {
             }
         },
         actions = {
+            // In-game Navbar
             if (isInGame) {
                 Text(
                     text = "Points: ${user.points}",

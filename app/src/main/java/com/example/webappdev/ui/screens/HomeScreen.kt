@@ -22,9 +22,16 @@ fun HomeScreen(user: User, onStartGame: () -> Unit) {
                 .padding(padding),
             verticalArrangement = Arrangement.Center
         ) {
+            // Opening GameScreen
             ChessButton("New Game") { onStartGame() }
+
+            // Opening TimerScreen
             ChessButton("Match Timer") { /* Open timer dialog */ }
+
+            // Opening SettingsScreen
             ChessButton("Settings") { /* Navigate to settings */ }
+
+            // Opening Accounts Screen
             ChessButton("Account") { /* Open account page */ }
         }
     }
